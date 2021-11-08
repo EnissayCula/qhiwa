@@ -1,43 +1,4 @@
-/*-----------------------------------------------------------------------------
-Name:       Andalus Blogger Template
-Version:    1.0.2
-Designer:   EnissayCula
-Url:        
----------------------------------------------------------------------------- */
-/*
-<Group description="Template Colors" selector="body">
-<Variable name="keycolor" description="Main Color" type="color" default="#f1c232" value="#f1c232"/>
-<Variable name="keycolor3" description="First" type="color" default="#8E54E9" value="#8E54E9"/>
-<Variable name="keycolor2" description="Second" type="color" default="#4776E6" value="#4776E6"/>
-</Group>
-<Variable name="body.background" description="Body Background" type="background" default="$(color) none repeat scroll top left" value="$(color) none repeat scroll top left"/>
-<Variable name="main.font" description="Main Font" type="font" default="normal normal 14px 'Montserrat' " value="normal normal 14px &#39;Montserrat&#39; "/>
-<Group description="Top Menu" selector="#topnav1">
-<Variable name="top.menu.font" description="Top Menu Font" type="font" default="normal normal 11px 'Montserrat'" value="normal normal 11px &#39;Montserrat&#39;"/>
-</Group>
-<Group description="Main Menu" selector="#menu-wrap-andalus">
-<Variable name="menu.font" description="Main Menu Font" type="font" default="normal normal 13px 'Basic'" value="normal normal 13px &#39;Basic&#39;"/>
-</Group>
-<Group description="Slider Font" selector="#intro-slider">
-<Variable name="slider.font" description="Slider Font" type="font" default="normal bold 35px 'Montserrat' " value="normal bold 35px &#39;Montserrat&#39; "/>
-</Group>
-<Group description="Favourite Posts Style" selector=".f-p .container">
-<Variable name="favourite.title.font" description="Favourite Posts Title" type="font" default="normal normal 17px Flat, CircularStd " value="normal normal 17px Flat, CircularStd "/>
-<Variable name="favourite.font" description="Favourite Posts Font" type="font" default="normal normal 15px 'Montserrat' " value="normal normal 15px &#39;Montserrat&#39; "/>
-</Group>
-<Group description="Post Body" selector=".post-info">
-<Variable name="post.title.font" description="Post Title Font" type="font" default="normal bold 22px 'Montserrat'" value="normal bold 22px &#39;Montserrat&#39;"/>
-<Variable name="item.post.title.font" description="Post Title Font In Singel Page" type="font" default="normal bold 30px 'Montserrat' " value="normal bold 30px &#39;Montserrat&#39; "/>
-<Variable name="post.title.color" description="Post Title Color" type="color" default="#444" value="#444444"/>
-</Group>
-<Group description="Sidebar Style" selector=".sidebar .widget h2">
-<Variable name="sidebar.font" description="Sidebar Font" type="font" default="normal normal 15px 'Montserrat' " value="normal normal 15px &#39;Montserrat&#39; "/>
-<Variable name="sidebar.color" description="Sidebar Color" type="color" default="#333" value="#333333"/>
-</Group>
-<Group description="Footer style" selector="#footer-wrap-andalus">
-<Variable name="footer.menu.font" description="Top Menu Font" type="font" default="normal normal 13px 'Montserrat'" value="normal normal 13px &#39;Montserrat&#39;"/>
-</Group>
-*/
+
 /*========================================
 01. CSS REST
 =========================================*/
