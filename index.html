@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<title>AnimesCula</title>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet"/>
+  
+       <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+
+<style>
+body,h1 {font-family: 'Cairo', sans-serif;}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+  
+.bgimg {
+  background-image: 
+    linear-gradient(
+          rgba(208, 101, 91, 0.27), 
+          rgba(136, 32, 59, 1)
+        ),
+  
+  url('https://i.imgur.com/ksmjlYs.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-color: #0d0614;
+
+}
+.button {
+  font-family: 'Cairo', sans-serif;
+  background-color: #ffffff21;
+  border: none;
+  color: white;
+  padding: 30px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom-left-radius: 25px;
+  cursor: pointer;
+}
+.button:hover {
+background-color: #671d35;
+border-bottom-right-radius: 50px 20px;
+border-bottom-left-radius: 0px;
+border-left-color: white;
+border-left-style: solid;
+border-top-left-radius: 25px;
+opacity: 1}
+
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+</style>
+
+<style>
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  </style>
+<body>
+
+
+  
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+
+  <div class="w3-display-middle">
+
+    <div class="w3-large w3-center">
+      
+<a href="#" class="button">Discoord <i class="fab fa-discord"></i></a>
+<a href="#" class="button">My channel <i class="fab fa-youtube"></i></a>
+<a href="#" class="button" onclick="openNav()">&#9776; More</a>
+
+
+</div>
+  </div>
+
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+
+  <div class="w3-display-bottomleft w3-padding-large">
+    by <a href="" target="_blank">EnissayCula</a>
+  </div>
+</div>
+
+</body>
+</html>
