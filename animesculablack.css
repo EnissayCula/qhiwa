@@ -1,7 +1,53 @@
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1c1c1c; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9c064b ; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9436E1; 
+}
+
+
+/* shadow sec */
+ .shadow{box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);transition: .3s ease-out;}
+ .shadow:hover{box-shadow: 0 14px 25px rgba(0,0,0,.16);}
+/* ãÈÑæß Êß*/
+.ball-message{position:fixed;bottom:12px;z-index:999999999999;left:144px;;margin-top:-50px;margin-left:-50px;height:100px;width:100px;border:3px solid #FFF;background:url(https://1.bp.blogspot.com/-6z3BksSOlW4/YYEv6OvbEDI/AAAAAAAAE6Q/R4uaSRmDgM01D0deX5gtIcY2xvPpZ-pxACLcBGAsYHQ/s16000/491008-4k-anime-landscape-wallpaper-in-2020-scenery-wallpaper-aesthetic-desktop-wallpaper-desktop-wallpaper-art.png);background-size:contain;border-radius:1000px;transform:scale(0);transition-duration:0;transition-timing-function:cubic-bezier(0.005,0.95,0.135,1.205);}
+.ball-message .msg-count{position:absolute;top:0;left:0;color:#FFF;border:3px solid #FFF;background:#E80202;height:25px;width:25px;border-radius:1000px;text-align:center;line-height:18px;font-size:12px;opacity:0;transform:scale(0);transition-timing-function:cubic-bezier(0.005,0.95,0.135,1.205);box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);}
+.ball-message .halo{position:absolute;top:18px;left:18px;right:18px;bottom:18px;border-radius:1000px;background:rgba(255,255,255,0.6);transform:scale(0)}
+.ball-message .notif{position:absolute;top:-50px;left:-45px;width:183px;opacity:0}
+.ball-message .notif .bar{position:relative;border-radius:1000px;background:#FFF;height:30px;line-height:30px;width:0;margin:0 auto;padding:0 10px;overflow:hidden}
+.ball-message .notif .bar .text{position:absolute;margin:0;font-size:12px;color:#555;width:175px;z-index:1}
+.ball-message .notif .bar .action{position:relative;z-index:2;height:20px;width:20px;background:#BABABA;float:left;margin-top:5px;border-radius:100px;box-shadow:10px 0 0 0 #FFF,-10px 0 10px 0 #FFF,inset 0 0 0 1px #FFF;border:1px solid #BABABA;}
+.ball-message .notif .bar .action::after{content:'';border-left:5px solid #FFF;border-top:4px solid transparent;border-bottom:4px solid transparent;display:block;margin-left:7px;margin-top:4px}
+.ball-message .notif .arrow{top:30px;border-top:7px solid #FFF;border-left:7px solid transparent;border-right:7px solid transparent;width:0;margin:0 auto;transform-origin:top;transform:scale(0)}
+.anim-start .ball-message{transform:none;transition-duration:.3s}
+.anim-start .ball-message .notif{opacity:1;transition-duration:.2s;transition-delay:1.6s}
+.anim-start .ball-message .notif .bar{width:100%;transition-duration:.6s;transition-delay:1.6s}
+.anim-start .ball-message .notif .arrow{transform:none;transition-delay:1.6s;transition-duration:.3s}
+.anim-start .ball-message .halo{opacity:0;transform:none;transition-duration:.6s;transition-delay:1.2s}
+.anim-start .ball-message .msg-count{opacity:1;transform:none;transition-duration:.3s;transition-delay:.6s}
+.autowrite{animation:typing 3.5s steps(40,end),blink-caret .75s step-end infinite}
+@keyframes typing{from{width:0}to{width:100%}}
+@keyframes blink-caret{from,to{border-color:transparent}50%{border-color:#dedede}}
+
+
+*/
 /*========================================
 01. CSS REST
 =========================================*/
+
 div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 background: #13131300;
 border: 0;
@@ -875,19 +921,19 @@ background: #131313 !important;
 }
 a.category {
 margin-top: 10px;
-color: #fff;
+color: #ffffff;
 display: inline-block;
 font-size: 12px;
 border-radius: 1px;
 line-height: normal;
-padding: 4px 15px;
+padding: 13px 49px;
 position: relative;
 text-transform: uppercase;
-background: #4a148c;  /* fallback for old browsers */
-background: linear-gradient(135deg, rgba(255,255,255,0) 8%,#ad1457 8%,#6a1b9a 92%,rgba(255,255,255,0) 92%);
+background: #d30061b5;  /* fallback for old browsers */
 }
 a.category:hover {
 color: #fff;
+background: #e10858de;
 }
 .featured-overlay .featured-cat .cat a {
 color: #fff;
@@ -938,8 +984,8 @@ color: #ffffff;
 font-size: 12px !important;
 font-weight: 400 !important;
 text-transform: uppercase;
-border-radius: 50px;
-padding: .6rem 1.2rem;
+border-radius: 8px;
+padding: 0.8rem 4rem;
 background: #ad1457;
 background: linear-gradient(to right, #6a1b9a, #ad1457);
 transition: all .5s ease;
@@ -1803,7 +1849,7 @@ margin-right: 10px;
 top: 10px;
 right: 10px;
 line-height: 8px;
-background: #ad1457;
+background: #e10858b8;
 color: #fff;
 position: absolute !important;
 border-radius: 5px;
@@ -2381,7 +2427,7 @@ margin-right: 0 !important;
 margin-left: 7px !important;
 }
 .item .post-title {
-color: #4d464f;
+color: white;
 font-size: 22px;
 line-height: 35px;
 margin-bottom: 10px;
@@ -2390,11 +2436,11 @@ font-family: 'Ta3alamFont', Roboto, sans-serif;
 }
 .item .post-body {
 width: 100%;
-color: #5E5E5E;
+color: black;
 font-size: 15px;
 line-height: 27px;
 overflow: hidden;
-background: #fff;
+background: white;
 padding: 20px;
 }
 .item .post-body img {
@@ -2442,7 +2488,7 @@ color: #4a148c;
 overflow: hidden;
 padding: 20px;
 margin-bottom: 30px;
-background: #fff;
+background: #000;
 border-top: none !important;
 }
 /*========== Post Tags ==========*/
@@ -2785,7 +2831,7 @@ filter: grayscale(0) brightness(80%) contrast(100%);
 07. SINGLE PAGE
 =========================================*/
 .static_page h1.post-title.entry-title {
-color: #333;
+color: white;
 font-size: 22px;
 line-height: 35px;
 font-weight: 600;
@@ -2802,9 +2848,8 @@ color: #464646;
 font-size: 15px;
 line-height: 25px;
 overflow: hidden;
-background: #fff;
+background: white;
 padding: 20px;
-border: 1px solid #eee;
 margin-bottom: 30px;
 }
 body.static_page.dark-skin .post-body {
@@ -4213,7 +4258,7 @@ margin: auto;
 display: block;
 text-align: center;
 margin: 20px 0;
-color: #999b9d;
+color: white;
 float: right;
 font-size: 13px;
 }
@@ -4820,211 +4865,3 @@ margin-top: 45px;
 }
 }
 
-
-
-]]></b:skin>
-<b:template-skin><![CDATA[
-
-/*======== PAGE LAYOUT:GLOBALE ========*/
-body#layout .hide{display:block;}
-body#layout .box{width:100%;}
-body#layout .widget{height:auto!important;float:none;}
-body#layout .section h4{display:none;}
-body#layout .section{background-color:#ffffff!important;background-color:#ffffff;border-top:none!important;padding:10px!important;width:auto!important;margin:0!important;height:auto!important;float:none;}
-body#layout .section-label{padding:10px;display:block;}
-body#layout div.layout-title{font-size:16px;text-transform:capitalize;}
-body#layout{padding-bottom:20px!important;background-color:#f8f8f8!important;}
-body#layout div.layout-widget-description{display:none!important;}
-body#layout .section>div.dropregion:last-child{clear:both;}
-body#layout .section-label .widget-content{background:none;border:none;}
-body#layout .section-label .widget-content div.layout-title{font-size:30px;}
-body#layout .section-label .editlink{display:none;}
-body#layout .locked-widget .widget-content{background-color:#f8f8f8;box-shadow:none!important;}
-body#layout .admin-panel{background:#052352;overflow:hidden;max-width:1200px;margin:0 2%;}
-body#layout .admin-panel:before{content:'TEMPLATE OPTION';font-size:17px;font-family:monospace;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:2px;background:#052352;padding:20px;display:block;border-bottom:1px solid #ffffff52;}
-body#layout .admin-panel div.widget{width:47.11111111%;float:left;margin:10px;margin-top:0!important;}
-body#layout .admin-panel .section{background-color:#052352!important;margin:0!important;padding:30px 0!important;border:0!important;}
-body#layout .admin-panel .locked-widget .widget-content{background-color:#052352;color:#fff;box-shadow:0 0 10px #e04814!important;}
-body#layout .admin-panel .editlink{color:#052352!important;background:#fff;padding:0 10px!important;border-radius:5px;}
-/*======== PAGE LAYOUT:HEADER ========*/
-body#layout #topnav1{height:auto;padding-top:20px;}
-body#layout #top-menu{float:left;width:49%;}
-body#layout #top-social{float:right;width:49%;}
-body#layout #header-content{display:block;padding:20px 0;}
-body#layout .home-icon{display:none;}
-body#layout #top-menu:before{content:'القائمة  العلوية';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:none;}
-body#layout .logo:before{content:'اللوجو';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:none;}
-body#layout .logo{width:30%;float:left;}
-body#layout .header-menu{width:67%;float:right;}
-body#layout #menu-wrap-andalus{height:inherit;}
-body#layout .menu:before{content:'القائمة  الرئيسية';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:none;}
-/*======== PAGE LAYOUT:INTRO SLIDER POSTS ========*/
-body#layout #intro-slider{padding:20px 0;overflow:hidden;}
-body#layout #intro-slider:before{content:'السلايد  الكبير';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:none;margin-left:2%;margin-right:2%;}
-body#layout #intro-slider #HTML937 .widget-content{color:#fff;margin-top:20px;background:#052352!important;}
-body#layout #intro-slider #HTML937 .widget-content .editlink{color:#757575!important;background:#fff;padding:0 10px;border-radius:10px;line-height:15px;}
-body#layout #intro-slider #HTML937:before{content:"";width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid #052352;position:absolute;left:50%;margin:auto;right:0;margin-left:-12px;top:-12px;}
-body#layout .f-p:before{content:'السلايد  الثاني';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:none;margin-left:2%;margin-right:2%;}
-/*======== PAGE LAYOUT:CONTENT WRAPPER ========*/
-body#layout #main-wrapper{margin-top:20px;}
-body#layout #content-wrapper{width:69%;float:right;}
-body#layout #content-wrapper:before{content:'المواضيع';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:none;}
-body#layout #post-ad .widget-content{background:#fff59d!important;}
-body#layout #post-ad .editlink{color:#757575!important;background:#fff;padding:0 10px;border-radius:10px;line-height:15px;}
-body#layout #post-home-style{border-bottom:0!important;}
-body#layout #post-home-style:after{content:"";width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-top:12px solid #052352;position:absolute;left:50%;margin:auto;right:0;margin-left:-12px;bottom:0;}
-body#layout #post-home-style .widget-content{color:#fff;background:#052352!important;}
-body#layout #post-home-style .editlink{color:#757575!important;background:#fff;padding:0 10px;border-radius:10px;line-height:15px;}
-/*======== PAGE LAYOUT:SIDEBAR WRAPPER ========*/
-body#layout #sidebar-wrapper{overflow:visible;width:30%;float:left;}
-body#layout #sidebar-wrapper:before{content:'السيدبار';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:none;}
-/*======== PAGE LAYOUT:FOOTER ========*/
-body#layout #footer-wrap-andalus{overflow:auto;width:100%;}
-body#layout .footer-col:before{content:'الفوتر';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:2px solid #ccc;margin-top:20px;}
-body#layout #column1,body#layout #column2,body#layout #column3,body#layout #column4{width:24.9333%;float:left;}
-/*======== PAGE LAYOUT:FOOTER SOCIAL ICONS ========*/
-body#layout .footer-social-icons{width:49%;float:right;}
-body#layout .footer-social-icons:before{content:'ايقونات  الفوتر';font-size:17px;font-family:tahoma;font-weight:600;color:#000;text-transform:uppercase;background:#fff;padding:20px;display:block;border:1px solid #ccc;border-bottom:none;}
-/*======== PAGE LAYOUT:FOOTER SOCIAL MENU ========*/
-body#layout .footer-menu{width:49%;float:right;}
-
-]]></b:template-skin>
-  <link href='//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css' rel='stylesheet'/>
-<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'/>
-<script type='text/javascript'>
-      //<![CDATA[	
-function introPosts( json ) {
-	var htmlcode = '<ul class="swiper-wrapper">';
-	document.write( htmlcode );
-	for ( var i = 0; i < json.feed.entry.length; i++ ) {
-		for ( var j = 0; j < json.feed.entry[ i ].link.length; j++ ) {
-			if ( json.feed.entry[ i ].link[ j ].rel == 'alternate' ) {
-				var postUrl = json.feed.entry[ i ].link[ j ].href;
-				break;
-			}
-		}
-		var postTitle = json.feed.entry[ i ].title.$t;
-		var postThumbSize = 600;
-		var authorImg = " ";
-		var postThumb = " ";
-		postThumb = postThumb.replace( '/s72-c/', '/s' + postThumbSize + '/' );
-		var postCategory = " ";
-		var author = json.feed.entry[ i ].author[ 0 ].name.$t;
-		var date = json.feed.entry[ i ].published.$t;
-		var month = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-		var month2 = ["يناير","فبراير","مارس","أبريل","مايو","يونيو"," يوليو"," أغسطس","سبتمبر","أكتوبر","نوفمبر"," ديسمبر"];
-		var day = date.split( "-" )[ 2 ].substring( 0, 2 );
-		var m = date.split( "-" )[ 1 ];
-		var year = date.split( "-" )[ 0 ];
-		for ( var u2 = 0; u2 < month.length; u2++ ) {
-			if ( parseInt( m ) == month[ u2 ] ) {
-				m = month2[ u2 ];
-				break;
-			}
-		}
-		date = m + ' ' + day + ', ' + year;
-        try {
-            postThumb = json.feed.entry[ i ].media$thumbnail.url;
-        } catch ( nl ) {
-            postThumb = "http://4.bp.blogspot.com/-OI0BoYP677M/VZu1TW7a3DI/AAAAAAAAFsE/4BRdE2YFS5A/s1600/noimg.png";
-        }
-		try {
-			postCategory = json.feed.entry[ i ].category[ 0 ].term;
-		} catch ( n ) {
-			postCategory = "uncategorized";
-		}
-        try {
-			authorImg = json.feed.entry[i].author[0].gd$image.src;
-        } catch ( nl ) {
-            authorImg = "http://3.bp.blogspot.com/-fgwrcZWeRrU/V26tvNcGtsI/AAAAAAAAAG4/lGwGnQDZsNY7bAPr8hVorZruD-jHHxxOgCLcB/s50/anonyme.png";
-        }
-		var item = '<div class="swiper-slide"><div class="item-outer"><div class="intro-thumbnail"><a href="' + postUrl + '" style="background:url(' + postThumb + ') no-repeat center center;background-size: cover"/></div><div class="intro-posts-andalus"><span class="cat"><a class="category" href="/search/label/' + postCategory + '?max-results=6">' + postCategory + '</a><h1 class="intro-posts-title"><a href="' + postUrl + '">' + postTitle + '</a></h1>  <a class="rmoreintro" href="' + postUrl + '" role="button"> اقرأ المزيد <i class="lnr lnr-chevron-left"></i></a>   <ul class="intro-posts-meta"><li class="intro-author-img"><img src="' + authorImg + '" /></li><li class="intro-posts-author">' + author + '</li></ul></div></div></div>';
-		htmlcode += '</ul>';
-		document.write( item );
-$('.intro-thumbnail a').attr('style', function(i, src) {
-	return src.replace('/s72-c', '/s1600');
-});
-$('.intro-thumbnail a').attr('style', function(i, src) {
-	return src.replace('/default.jpg', '/hqdefault.jpg');
-});
-	}
-}
-
-// Custom Favourite posts
-function favouritePosts( json ) {
-	var htmlcode = '<ul class="swiper-wrapper favourite-posts">';
-	document.write( htmlcode );
-	for ( var i = 0; i < json.feed.entry.length; i++ ) {
-		for ( var j = 0; j < json.feed.entry[ i ].link.length; j++ ) {
-			if ( json.feed.entry[ i ].link[ j ].rel == 'alternate' ) {
-				var postUrl = json.feed.entry[ i ].link[ j ].href;
-				break;
-			}
-		}
-		var postComments = json.feed.entry[ i ].thr$total.$t;
-		var postTitle = json.feed.entry[ i ].title.$t;
-		var postThumbSize = 600;
-		var postThumb = " ";
-		postThumb = postThumb.replace( '/s72-c/', '/s' + postThumbSize + '/' );
-		var postCategory = " ";
-        try {
-            postThumb = json.feed.entry[ i ].media$thumbnail.url;
-        } catch ( nl ) {
-            postThumb = "http://4.bp.blogspot.com/-OI0BoYP677M/VZu1TW7a3DI/AAAAAAAAFsE/4BRdE2YFS5A/s1600/noimg.png";
-        }
-		try {
-			postCategory = json.feed.entry[ i ].category[ 0 ].term;
-		} catch ( n ) {
-			postCategory = "uncategorized";
-		}
-		var item = '<div class="swiper-slide favourite-post"><div class="item-outer"><div class="favourite-thumbnail"><a href="' + postUrl + '"><img src="' + postThumb.replace( '/s72-c/', '/s' + 400 + '/' ) + '"/></a></div><a class="f-category-andalus" href="/search/label/' + postCategory + '?max-results=6">' + postCategory + '</a><div class="favourite-posts-overlay"><h1 class="favourite-posts-title"><a href="' + postUrl + '">' + postTitle + '</a></h1></div></div></div>';
-		htmlcode += '</ul>';
-		document.write( item );
-	}
-}
-// Custom Related Posts
-function relatedPosts( json ) {
-	var htmlcode = '<ul class="row">';
-	document.write( htmlcode );
-	for ( var i = 0; i < json.feed.entry.length; i++ ) {
-		for ( var j = 0; j < json.feed.entry[ i ].link.length; j++ ) {
-			if ( json.feed.entry[ i ].link[ j ].rel == 'alternate' ) {
-				var postUrl = json.feed.entry[ i ].link[ j ].href;
-				break;
-			}
-		}
-		var postTitle = json.feed.entry[ i ].title.$t;
-		var postThumbSize = 600;
-		var postThumb = " ";
-		var	postCategory = " ";
-		postThumb = postThumb.replace( '/s72-c/', '/s' + postThumbSize + '/' );
-        try {
-            postThumb = json.feed.entry[ i ].media$thumbnail.url;
-        } catch ( nl ) {
-            postThumb = "http://4.bp.blogspot.com/-OI0BoYP677M/VZu1TW7a3DI/AAAAAAAAFsE/4BRdE2YFS5A/s1600/noimg.png";
-        }
-		try {
-			postCategory = json.feed.entry[ i ].category[ 0 ].term;
-		} catch ( n ) {
-			postCategory = "uncategorized";
-		}
-		var item = '<li class="related-post"><div class="item-outer"><div class="related-thumbnail"><a href="' + postUrl + '"><img src="' + postThumb.replace( '/s72-c/', '/s' + 400 + '/' ) + '"/></a></div><div class="related-posts-overlay"><a class="category" href="/search/label/' + postCategory + '?max-results=6">' + postCategory + '</a><h4 class="related-posts-title"><a href="' + postUrl + '">' + postTitle + '</a></h4></div></div></li>';
-		htmlcode += '</ul>';
-		document.write( item );
-	}
-}
-
-// Custom Sticky Menu
-
-$(function() {
-	var aboveHeight = $('#header-wrapper').outerHeight();
-	//when scroll
-	$(window).scroll(function() {
-		if ($(window).scrollTop() > aboveHeight) {
-			$('#menu-wrap-andalus').addClass('fixed-menu').next();
-		} else {
-			$('#menu-wrap-andalus').removeClass('fixed-menu').next();
-		}
-	});
-});
-      //]]>
