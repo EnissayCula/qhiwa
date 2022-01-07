@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet"/>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+body {
+	background-color: white;
+	color: black;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+</style>
+<style>
+div.polaroid {
+  box-shadow: 0 4px 8px 0 rgba(165, 195, 251, 0.8), 0 6px 20px 0 rgba(165, 195, 251, 0.8);
+  border-radius: 10px;
+}
+
+div.container {
+  padding: 10px;
+}
+</style>
+<style>
+
+.dark-mode {
+  background-color: #060416;
+  color: white;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 9px 2px;
+  transition: 0,4s;
+  cursor: pointer;
+  border: 2px solid #4CAF50;
+}
+
+
+</style>
+</head>
+<body>
+<button class="button" onclick="myFunction()">dark mode</button>
+
+<br><br>
+
+<div class="polaroid">
+  
+  <div class="container">
+    <a style="font-size:20px;"><a> 
+    <br>
+      تحميل</a> : GL سيرفر</a>
+  </div>
+  <br>
+</div>
+
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
