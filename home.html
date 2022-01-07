@@ -11,6 +11,14 @@ body {
   font-family: 'Cairo', sans-serif;
   background-color: #151515;
   color: white;
+  text-align-last: center;
+}
+
+a {
+  font-family: 'Cairo', sans-serif;
+  color: white;
+  text-decoration: none;
+  
 }
 
 * {
@@ -22,7 +30,11 @@ body {
   float: left;
   width: 50%;
   padding: 10px;
+  transition:0,5;
 }
+
+
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -47,18 +59,56 @@ body {
   background-color: #666;
   color: white;
 }
-.button {
-  background-color: #9c064b;
-  border: none;
-  color: white;
-  padding: 7px 20%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+
+</style>
+<style>
+.container {
+  position: relative;
+  width: 50%;
 }
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+	border: 2px solid #ffffff;
+  color: white;
+  font-size: 16px;
+	padding: 7px 30px;
+    transition-duration: 0.4s;
+}
+.text:hover {
+  background-color: #04AA6D;
+  border: 0px;
+}
+
 </style>
 </head>
 <body>
@@ -70,27 +120,18 @@ body {
 <br>
 
 <div class="row" style="text-align-last: center;">
-  <div class="column" style="background-color:#2e2e2e;">
-    <img src="https://1.bp.blogspot.com/-97OOY_jPQ9I/YYbSeBOVXZI/AAAAAAAAE7w/2X7LkOYMvCcplKnznA9M0OVQ1LNQgNyKgCLcBGAsYHQ/s280-s400/115530l.jpg" alt="Snow" style="width:100%">
-    <a href="https://mega.nz/folder/oJZ2STzS#IiqQJacKD5KtMHVsWBeWXw" class="button">تحميل</a>
-  </div>
-  
-  <div class="column" style="background-color:#4c4c4c;">
-    <img src="https://1.bp.blogspot.com/-97OOY_jPQ9I/YYbSeBOVXZI/AAAAAAAAE7w/2X7LkOYMvCcplKnznA9M0OVQ1LNQgNyKgCLcBGAsYHQ/s280-s400/115530l.jpg" alt="Snow" style="width:100%">
-    <a href="#" class="button">تحميل</a>
-</div>
 
-<div class="row">
-  <div class="column" style="background-color:#4c4c4c;">
-    <img src="https://1.bp.blogspot.com/-97OOY_jPQ9I/YYbSeBOVXZI/AAAAAAAAE7w/2X7LkOYMvCcplKnznA9M0OVQ1LNQgNyKgCLcBGAsYHQ/s280-s400/115530l.jpg" alt="Snow" style="width:100%">
-    <a href="#" class="button">تحميل</a>
+    <div class="column container" style="background-color:#2e2e2e;">
+    <a>
+    <img class="image" src="https://m.shahed4u.dev/wp-content/uploads/2021/12/MV5BOGZiMDQ1YTQtMGVlOC00OTJiLWFkYzMtYjdiYmY0NWM5YzVjXkEyXkFqcGdeQXVyOTg4MDk3MTQ@._V1_SX700-358x550.jpg" alt="Snow" style="width:100%">
+
+   The Lion King 3: Hakuna Matata 2004 
+    </a>
+      <div class="middle">
+    <a href="#" class="text">تحميل</a>
   </div>
-  
-  <div class="column" style="background-color:#2e2e2e;">
-    <img src="https://1.bp.blogspot.com/-97OOY_jPQ9I/YYbSeBOVXZI/AAAAAAAAE7w/2X7LkOYMvCcplKnznA9M0OVQ1LNQgNyKgCLcBGAsYHQ/s280-s400/115530l.jpg" alt="Snow" style="width:100%">
-    <a href="#" class="button">تحميل</a>
+ 
   </div>
-</div>
 
 <script>
 // Get the elements with class="column"
