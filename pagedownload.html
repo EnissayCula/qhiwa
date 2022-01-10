@@ -33,7 +33,7 @@ div.container {
   color: white;
 }
 
-.button {
+.buttondark {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -50,26 +50,143 @@ div.container {
 
 
 </style>
+
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 14px 40%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #35706f91; 
+  border: 2px solid rgb(63,94,251);
+  font-family: 'Cairo', sans-serif;
+
+}
+
+
+.button:hover {
+   background: radial-gradient(circle, rgba(174,238,199,1) 0%, rgba(148,233,228,1) 100%);
+	border: 2px solid rgb(174,238,199);;
+  	color: white;
+    
+}
+
+
+</style>
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+</style>
 </head>
 <body>
-<button class="button" onclick="myFunction()">dark mode</button>
+<button class="buttondark" onclick="DarkMode()">dark mode</button>
 
 <br><br>
 
 <div class="polaroid">
   
   <div class="container">
+
+
     <a style="font-size:20px;"><a> 
     <br>
-      تحميل</a> : GL سيرفر</a>
+     
+      <button class="button">تحميل</button>
+      
+      
+        
+  <input type="text" value="Hello World" id="myInput">
+  
+  <div class="tooltip">
+<button onclick="Copy()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to Link</span>
+  Copy text
+  </button>
+</div>
   </div>
   <br>
 </div>
 
+<script>
+function Copy() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
 
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
 
 <script>
-function myFunction() {
+function DarkMode() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
