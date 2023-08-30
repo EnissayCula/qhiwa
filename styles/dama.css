@@ -1,0 +1,49 @@
+.dama-container {
+  display: grid;
+  grid-template-columns: repeat(8, 50px); /* Adjust the size as needed */
+  grid-template-rows: repeat(8, 50px);    /* Adjust the size as needed */
+  background-color: var(--BgBrownSm);
+  padding: 10px;
+  justify-content: end;
+  box-shadow: 3px 3px 12px var(--ColorBrown);
+  margin-top: 20px;
+}
+.grid-item {
+  background-color: var(--ColorBWhite);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.point-black {
+background-color: var(--Colorbblack);
+}
+
+/* point brown */
+
+.Point-Dama {
+  position: relative;
+  top: -13px;
+  left: -13px;
+  border-radius: 58px;
+  border: 5px solid var(--BgColorBiadqBW);
+  background: var(--BgColorBiadqBD);
+  width: 25px;
+  height: 25px;
+}
+
+.Point-Dama2 {
+  position: relative;
+  top: -13px;
+  left: -13px;
+  border-radius: 58px;
+  border: 5px solid var(--bgColorBiadqRW);
+  background: var(--BgColorBiadqRD);
+  width: 25px;
+  height: 25px;
+}
+
+
+/* border: 5px solid #fbab72;
+  background: #bd6a2f; */
+
