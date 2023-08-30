@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles/all.css">
+    <style>
+
+        #register {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            background-color: var(--ColorBrown);
+            padding: 20px;
+            
+        }
+        #register input {
+            margin: 10px 0 10px;
+            padding: 10px 30px;
+        }
+        #login input {
+            margin: 10px 0 10px;
+            padding: 10px 30px;
+        }
+        label {
+            color: white;
+        }
+        div#login {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        #main-regi {
+            background-color: rgb(99, 94, 87);
+            width: 100%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main-regi">
+        <div id="register" ></div>
+        
+    </div>
+
+
+<div id="login" style="display: none;">
+    <label for="ps-login">Login ID :</label>
+    <input type="text" name="" id="email-login" placeholder="E-mail & UserName">
+
+    <label for="ps-login">Password :</label>
+    <input type="password" name="" id="ps-login" placeholder="Password">
+    <div>
+        <input type="checkbox" name="checkbox" id="">
+        <label for="checkbox">Stay logged in</label>
+    </div>
+</div>
+    <script src="../scripts/en/register.js"></script>
+</body>
+</html>
