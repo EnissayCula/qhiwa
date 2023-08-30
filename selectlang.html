@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/all.css">
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            position: fixed;
+            top: 45%;
+            left: 45%;
+        }
+        .lang {
+            cursor: pointer;
+            padding: 30px 40px;
+            border: 2px solid var(--ColorBrown);
+            transition: all 0.3s;
+            margin: 10px;
+        }
+        .lang:hover {
+            background-color: var(--ColorBrown);
+            color: white;
+            border-radius: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <langs>
+            <arabe class="lang" href="/">العربي</arabe>
+            <englis class="lang" ><a href="/en/lobby.html" target="_blank"></a>English</englis>
+        </langs>
+    </main>
+</body>
+</html>
