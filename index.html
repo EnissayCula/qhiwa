@@ -14,136 +14,21 @@
     <meta name="keywords" content="كلمة مفتاحية 1, كلمة مفتاحية 2, ...">
 
     <link rel="shortcut icon" href="./imgs/Qhiwa.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/media.css">
-    <link rel="stylesheet" href="./styles/dama.css">
     <link rel="stylesheet" href="./styles/all.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <style>
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/dama.css">
+    <link rel="stylesheet" href="./styles/Main-Account.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
-
-        .Main {
-            text-align: center;
-            background-color: antiquewhite;
-            width: 100%;
-            height: 100vw;
-        }
-        .Menu {
-            display: flex;
-            text-align: center;
-            position: fixed;
-            left: 0;
-            width: 10%;
-            height: 100vw;
-            background-color: rgb(218, 174, 154);
-            flex-direction: column;
-            flex-wrap: nowrap;
-        }
-        .gallery {
-            background-image: url(./imgs/damas.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 60vh;
-        }
-        #Header-Main{
-            background-color: rgba(19, 19, 19, 0.185);
-            padding: 50px;
-        }
-        #Menu-Main {
-            /* border: 1px solid red ; */
-        }
-        .Footer {
-            background-color: rgb(59, 59, 59);
-            text-align: center;
-            padding: 20px;
-        }
-        .Footer a {
-            color: #aaaaaa;
-        }
-
-        div#img-cf {
-            padding: 10px;
-            width: 24rem;
-        }
-        div#img-cf img {
-            position: relative;
-            width: 50%;
-            left: 7rem;
-            filter: drop-shadow(1px 6px 2px var(--ColorBrown));
-        }
-        .dama {
-            display: flex;
-            align-items: center;
-            align-content: center;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-        }
-        #From-Login {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex-wrap: nowrap;
-            margin: 20px;
-
-        }
-        #From-Login input {
-            padding: 10px;
-            width: 18vw;
-            margin: 10px;
-            border: 3px solid var(--ColorBrown);
-        }
-        #From-Login input:focus {
-            background: var(--ColorBrown);
-            border: 3px solid var(--ColorBrown);
-            color: var(--BgBrownSm);
-        }
-        #From-Login input:focus::placeholder {
-            color: var(--BgBrownSm);
-        }
-        #From-Login input[type="button"] {
-            cursor: pointer;
-            background: var(--ColorNoneTr);
-            border: 3px solid var(--ColorBrown);
-            padding: 10px;
-            width: 18vw;
-            margin: 10px;
-            transition: all 0.3s;
-        }
-        #From-Login input[type="button"]:hover {
-            background-color: var(--ColorBrown);
-            color: var(--BgBrownSm);
-        }
-        #From-Login p button {
-            cursor: pointer;
-            color: var(--BgColorBiadqBW);
-            background-color: var(--ColorNoneTr);
-            font-size: 16.8px;
-            padding: none;
-            border: none;
-            
-        }
-        #From-Login p button:hover {
-            color: var(--BgColorBiadqBD);
-        }
-        .fro-acconts {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: nowrap;
-            height: 54vh;
-        }
-
-    </style>
 </head>
 <body>
-    <div class="grid-container">
-        <!-- <div class="Menu">
+    <div class="X-Container">
+         <!-- <div class="Menu">
             <a href="">Players</a>
             <a href="">Serrbai</a>
         </div> -->
+
         <div class="Main">
             <div id="Header-Main">
                 <h1>Qhiwa</h1>
@@ -156,46 +41,16 @@
                     <div id="img-cf">
                         <img src="./imgs/Qhiwa.svg" alt="" srcset="">
                     </div>
-                    <div id="From-Login">
-                            <div id="log-in">
-                                <h1>Log In </h1>
-                        <div class="fro-acconts">
-                                    
-                                    <input type="text" placeholder="USERNAME">
-                                    <input type="password" placeholder="password">
-                                    <input type="button" value="Log In">
-                                    
-                                    <a href="">Forget password</a>
-                                    <p>Don't have an account? <button id="Btn-Sign-up">Sign up</button></p>
-                                
-                            </div>
-                        </div>
-                        
-                        <div id="Sign-up" style="display: none;">
-                            <h1>Sign up</h1>
-                            <div class="fro-acconts">
-
-                                <input type="text" placeholder="USERNAME">
-                                <input type="text" placeholder="E-mail">
-                                <input type="password" placeholder="password">
-                                <input type="password" id="ps-confi" placeholder="Password confirmation!" value="">
-                                <input type="button" value="Sign up">
-                                
-                                
-                                <p>Do u have an account? <button id="Btn-Log-In">Log In</button></p>
-                            </div>
-                                
-                        </div>
-                    </div>
+                    <div id="Main-Account"></div>
          
                     <div class="dama-container"></div>
                 </div>
-            <!-- <div class="gallery"></div> -->
+            
         </div>  
 
     </div>
     <div class="Footer"></div>
-
+    <script src="./scripts/en/Main-Account.js"></script>
     <script src="./scripts/js.js"></script>
     <script src="./scripts/Footer.js"></script>
     <script src="./scripts/damas.js"></script>
