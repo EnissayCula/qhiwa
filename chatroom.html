@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base href="https://enissaycula.github.io/qhiwa/">
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/all.css">
+    <style>
+        .main-chat {
+            display: flex;
+            justify-content: center;
+            color: var(--BgBrownSm);
+        }
+        .chatbox {
+            width: 50%;
+            height: 100vh;
+        }
+        #msg { 
+            display: flex;
+            align-content: center;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
+        #m-msg { 
+            display: flex;
+            align-content: center;
+            align-items: center;
+            flex-direction: row;
+            
+
+        }
+        #usr {
+            display: flex;
+            font-size: 10px;
+            color: var(--BgBrownSm);
+            align-items: center;
+        }
+
+        p {
+            background: var(--ColorBrown);
+            border-radius: 10px;
+            color: var(--BgBrownSm);
+            font-size: 15px;
+            padding: 6px;
+            margin: 10px;
+        }
+        #time {
+            color: var(--ColorBrown);
+            background: var(--BgBrownSm);
+            font-size: 14px;
+            padding: 0px 6px;
+            border-radius: 10px;
+        }
+        #img-us {
+            width: 32px;
+            height: 32px;
+        }
+        #msgs {
+            width: 500px;
+            background-color: rgb(36, 36, 36);
+        }
+        #sn-msg {
+            margin: 10px;
+            text-align: center;
+        }
+        #sn-txt {
+            border-radius: 10px;
+            padding: 5px 10px;
+            width: 300px;
+            border: var(--BorderBtnTr);
+            
+        }
+        #sn-btn {
+            width: 15%;
+            color: var(--BgBrownSm);
+            border: var(--BorderBtnTr);
+            border-radius: 10px;
+            padding: 5px 10px;
+            background-color: var(--ColorBrown);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="main-chat">
+        <!-- chat box -->
+        <div class="chatbox">
+            <div id="msgs">
+                <div id="msg">
+                    
+                    <p>
+                        <a href="" id="usr"><img id="img-us" src="./imgs/icons/icon-usr/usr.png" alt="" srcset="">username</a>
+                        hello world 
+                        <!-- <span id="time">20:30</span> -->
+                    </p>
+                </div>
+                <div id="m-msg">
+                        <p>
+                        <a href="" id="usr"><img id="img-us" src="./imgs/icons/icon-usr/usr.png" alt="" srcset="">
+                            username</a>
+                        hello woooooooooooooooooooooooooooooorld 
+                        <!-- <span id="time">20:30</span> -->
+                    </p>
+                </div>
+                <div id="sn-msg">
+                    <input id="sn-txt" type="text" placeholder="send">
+                    <input id="sn-btn" type="button" value="send">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
