@@ -1,93 +1,100 @@
-    :root {
+:root {
         
         
-        /* Fonts */
-        --Cairo: 'Cairo', sans-serif;
+    /* Fonts */
+    --Cairo: 'Cairo', sans-serif;
 
-        /* Colors */
-        --ColorBrown: rgb(148, 107, 71);
-        --BgBrownSm: blanchedalmond;
-        --ColorBlan: rgb(192, 181, 171);
-        --ColorNoneTr: rgba(255, 0, 0, 0);
+    /* Colors */
+    --ColorBrown: rgb(148, 107, 71);
+    --BgBrownSm: blanchedalmond;
+    --ColorBlan: rgb(192, 181, 171);
+    --ColorNoneTr: rgba(255, 0, 0, 0);
 
-        /* Board*/
-        --ColorBWhite: rgba(255, 255, 255, 0.8);
-        --Colorbblack: black;
+    /* Board*/
+    --ColorBWhite: rgba(255, 255, 255, 0.8);
+    --Colorbblack: black;
 
-        /* King */
-        --BgColorKing: #bd6a2f;
+    /* King */
+    --BgColorKing: #bd6a2f;
 
-        /* Player 1 */
-        --BgColorBiadqRD: #bd2f2f;
-        --bgColorBiadqRW: #fb7272;
+    /* Player 1 */
+    --BgColorBiadqRD: #bd2f2f;
+    --bgColorBiadqRW: #fb7272;
 
-        /* Player 2*/
-        --BgColorBiadqBD: #2f68bd;
-        --BgColorBiadqBW: #7296fb;
+    /* Player 2*/
+    --BgColorBiadqBD: #2f68bd;
+    --BgColorBiadqBW: #7296fb;
 
+    /* Border*/
+    --BorderBtnTr: 0px solid var(--ColorNoneTr);
 
-    }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        font-family: var(--Cairo);
-        color: var(--ColorBrown);
-    }
-    *:focus {
-        outline: none;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: var(--Cairo);
+    color: var(--ColorBrown);
+    transition: all 0.3s;
+}
+*:focus {
+    outline: none;
+}
 
-    body {
-        background-color: var(--BgBrownSm);
-        color: var(--ColorBrown);
-    }
+body {
+    background-color: var(--BgBrownSm);
+    color: var(--ColorBrown);
+}
 
-    ::-webkit-scrollbar {
-        width: 9px;
-    }
-  
-    ::-webkit-scrollbar-track {
-        background: var(--BgBrownSm);    
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: var(--BgColorKing); 
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: var(--ColorBrown);
-    }
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--BgBrownSm);    
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--BgColorKing); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--ColorBrown);
+}
 
 /* talfin */
 
-    .Main {
-        text-align: center;
-        background-color: antiquewhite;
-        width: 100%;
-        height: 100vw;
-    }
-    .Menu {
-        display: flex;
-        text-align: center;
-        position: fixed;
-        left: 0;
-        width: 10%;
-        height: 100vw;
-        background-color: rgb(218, 174, 154);
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+.Main {
+    text-align: center;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vw;
+}
+.Menu {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    width: 10%;
+    height: 100vw;
+    background-color: rgb(218, 174, 154);
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 
-    div#img-cf {
-        padding: 10px;
-        width: 24rem;
-    }
-    div#img-cf img {
-        position: relative;
-        width: 50%;
-        left: 7rem;
-        filter: drop-shadow(1px 6px 2px var(--ColorBrown));
-    }
+div#img-cf {
+    padding: 10px;
+    width: 24rem;
+}
+div#img-cf img {
+    position: relative;
+    width: 50%;
+    left: 7rem;
+    filter: drop-shadow(1px 6px 2px var(--ColorBrown));
+}
+button {
+    cursor: pointer;
+}
