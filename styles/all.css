@@ -98,3 +98,6 @@ div#img-cf img {
 button {
     cursor: pointer;
 }
+input[type="button"] {
+    cursor: pointer;
+}
