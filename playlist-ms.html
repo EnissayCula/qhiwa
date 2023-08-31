@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/playlist-ms.css">
+
+    <title>Qhiwa - Playlist Music</title>
+
+</head>
+<body>
+    <div id="switch-ms">
+        <button>Classic 80s</button>
+        <button>Funk</button>
+    </div>
+        <div class="player-container">
+            <h1>Music Playlist</h1>
+            <audio id="audio-player" controls style="display: none;" muted>
+                <source src="" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            
+            <div id="controls">
+                <button id="back-btn"><img src="./imgs/icons/icons-ms/back.png" alt="" srcset=""></button>
+                <button id="pause-btn"><img src="./imgs/icons/icons-ms/pause.png" alt="" srcset=""></button>
+                <button id="next-btn"><img src="./imgs/icons/icons-ms/right.png" alt="" srcset=""></button>
+                <button id="shuffle-btn"><img src="./imgs/icons/icons-ms/shuffle.png" alt="" srcset=""></button>
+                <button id="repeat-btn"><img src="./imgs/icons/icons-ms/repeat.png" alt="" srcset=""></button>
+                <button id="mute-btn"><img src="./imgs/icons/icons-ms/mute.png" alt="" srcset=""></button>
+            </div>
+            
+            <div id="volume-control">
+                <label for="volume-input">Volume:</label>
+                <input id="volume-input" type="range" min="0" max="1" step="0.01" value="0.5">
+            </div>
+
+            <ul id="playlist"></ul>
+        </div>
+
+        <script src="./scripts/playlist-ms.js"></script>
+</body>
+</html>
