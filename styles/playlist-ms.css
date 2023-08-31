@@ -13,15 +13,16 @@ ul {
 }
 
 li {
-    
     padding: 10px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    
 }
 
 li:hover {
-    color: var(--BgBrownSm);
-    background-color: var(--ColorBrown);
+    color: var(--ColorBrown);
+    border-radius: 15px;
+    background-color: var(--BgBrownSm);
+    box-shadow: inset -2px -2px 0px 2px;
 }
 
 #controls button{
@@ -87,11 +88,23 @@ input[type="range"]::-ms-thumb {
 #switch-ms {
     display: flex;
     justify-content: center;
-    
+    margin: 20px;
 }
 #switch-ms button {
     background-color: var(--BorderBtnTr);
     border: var(--BorderBtnTr);
-    font-size: 18px;
-    margin: 10px;
+    padding: 10px 18px;
+    font-size: 15px;
+    margin: 5px;
+}
+
+#switch-ms button:focus {
+    box-shadow: inset -2px -2px 0px 2px;
+    border-radius: 15px;
+}
+#switch-ms button:hover {
+    background-color: var(--ColorBrown);
+    color: var(--BgBrownSm);
+    border-radius: 15px ;
+    font-weight: bold;
 }
