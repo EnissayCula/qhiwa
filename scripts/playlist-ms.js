@@ -11,8 +11,8 @@ const muteBtn = document.getElementById('mute-btn');
 
 
 const songs = [
-    { title: 'Song 1', source: 'song1.mp3' },
-    { title: 'Song 2', source: 'song2.mp3' },
+    { title: 'The Doors - Back Door Man', source: './songes/The Doors - Back Door Man.mp3' },
+    { title: 'The Doors - Roadhouse Blues', source: './songes/The Doors - Roadhouse Blues.mp3' },
     { title: 'Song 3', source: 'song3.mp3' },
     // Add more songs here
 ];
