@@ -1,4 +1,4 @@
-import songs from './scripts/songs.js';
+import songs from '/scripts/songs.js';
 
 const audioPlayer = document.getElementById('audio-player');
 const playlist = document.getElementById('playlist');
