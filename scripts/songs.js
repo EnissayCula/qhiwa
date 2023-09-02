@@ -30,7 +30,9 @@ const songs = [
   
   const rockMusic = songs.filter(song => (song.genre.includes('rock')));
   console.log(rockMusic)
+
   const raiMusic = songs.filter(song => (song.genre.includes('rai')));
   console.log(raiMusic)
+
   const popMusic = songs.filter(song => (song.genre.includes('pop')));
   console.log(popMusic)
